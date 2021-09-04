@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>天气数据展示</title>
+<script type="text/javascript" src="./js/echarts.js"></script>
+<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+	<div id="temp" style="width:1400px; height:600px"></div>
+	<script type="text/javascript">
+	//1-初始化echarts内置对象
+	var myEcharts = echarts.init(document.getElementById('temp'));
+	var args = location.search; //获取URL中？及后面的参数部分
+	
+	var url = "TempServlet"+args;
+	alert("hahhahahahah");
+	$.get(url, function(data){
+		//将字符串转变为Object对象   data是后台传回来的数据
+		data = JSON.parse(data);
+		alert(data);
+		
+		var option = {
+			    title: {
+			        text: '温度类信息折线图'
+			    },
+			    tooltip: {
+			        trigger: 'axis'
+			    },
+			    legend: { //图例
+			        data:['平均温度','平均露点','最高温度','最低温度']
+			    },
+			    toolbox: {
+			        feature: {
+			            saveAsImage: {}
+			        }
+			    },
+			    xAxis: {
+			        type: 'category',
+			        boundaryGap: false,
+			        data: data.map(function(item){
+			        	return item.yearmoda
+			        })    //时间
+			    },
+			    yAxis: {
+			        type: 'value'  //key-value
+			    },
+			    series: [
+			        {
+			            name:'平均温度',
+			            type:'line',
+			            stack: '总量',
+			            data:data.map(function(item){
+			            	return item.temp
+			            })
+			        },
+			        {
+			            name:'平均露点',
+			            type:'line',
+			            stack: '总量',
+			            data:data.map(function(item){
+			            	return item.dewp
+			            })
+			        },
+			        {
+			            name:'最高温度',
+			            type:'line',
+			            stack: '总量',
+			            data:data.map(function(item){
+			            	return item.max
+			            })
+			        },
+			        {
+			            name:'最低温度',
+			            type:'line',
+			            stack: '总量',
+			            data:data.map(function(item){
+			            	return item.min
+			            })
+			        }
+			    ]
+			};
+		myEcharts.setOption(option);
+	});
+	</script>
+</body>
+</html>
