@@ -1,0 +1,6 @@
+KOREA, SOUTH===South Africa
+PAPUA NEW GUINEA===Eq. Guinea
+PAPUA NEW GUINEA===New Zealand
+SOUTH PACIFIC ISLANDS===South Africa
+VIRGIN ISLANDS (BRITISH)===U.S. Virgin Is.
+VIRGIN ISLANDS (U.S.)===U.S. Virgin Is.

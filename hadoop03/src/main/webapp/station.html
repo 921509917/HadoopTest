@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>GSOD DATA DISPLAY</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="skin-blue sidebar-mini">
+<div class="wrapper">
+	<header class="main-header">
+
+    <a href="#" class="logo">
+      <span class="logo-lg"><b>GSOD</b></span>
+    </a>
+
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+	  <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+      </a>
+	  
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            	<img src="dist/img/map.gif" class="user-image" alt="User Image">
+              <span class="hidden-xs"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全球站点地图显示</font></font></span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="dist/img/map.gif" class="img-circle" alt="User Image">
+                <p id="country_station_count">
+                </p>
+              </li>
+              <!-- Menu Footer-->
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <aside class="main-sidebar">
+
+    <section class="sidebar">
+      <!-- search form (Optional) -->
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+              </button>
+            </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu tree" data-widget="tree">
+        <li class="header">HEADER</li>
+        <!-- Optionally, you can add icons to the links -->
+        <li class="active"><a href="station.html"><i class="fa fa-link"></i> <span>全球站点地图显示</span></a></li>
+        <li><a href="show1.html"><i class="fa fa-link"></i> <span>站点气象数据展示</span></a></li>
+        <li><a href="show2.html"><i class="fa fa-link"></i> <span>区域气象数据展示</span></a></li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+  
+  
+  
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" >
+    <!-- Main content -->
+    <section class="content">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="station_info" style="height: 560px"></div>
+				</div>
+			</div>
+    </section>
+  </div>
+  
+</div>
+
+
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/echarts.js"></script>
+<script src="dist/js/adminlte.min.js"></script>
+<script type="text/javascript">
+//初始化Echarts内置对象
+var myEcharts = echarts.init(document.getElementById('station_info'));
+/*======================================================================地图及站点数据的显示===========================================================================*/
+//指定世界地图数据的路径
+var mapInfoUrl = "data/world.json";
+//通过get方式获取后台的数据，显示在散点图
+var stationInfoURL = "StationServlet";
+//显示加载图表
+myEcharts.showLoading();
+//通过Jquery的get方式获取世界地图数据
+$.get(mapInfoUrl, function(mapData){
+	//注册地图
+	echarts.registerMap("world", mapData);
+	
+	//从后台获取站点数据
+	$.get(stationInfoURL, function(data){
+		//data为字符串数据，显示之前需要转变对象
+ 		data = JSON.parse(data);
+ 		var stationData = data.stations;
+ 		stationData = JSON.parse(stationData);
+ 		
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++国家、站点数量显示++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/		
+ 		var countryCount = JSON.parse(data.countryCount);
+		var stationCount = JSON.parse(data.stationCount);
+		var str = "<font style='vertical-align: inherit;'>当前页面显示：</br>"+countryCount+"个国家， "+stationCount+"个站点</br></font>";
+		document.getElementById('country_station_count').innerHTML = str;
+		
+		
+		myEcharts.hideLoading();
+		
+		//指定配置项
+		myEcharts.setOption(option = {
+			//提示框组件
+			tooltip:{
+				trigger:'item',
+				formatter:'{b}'
+			},
+			//添加geo组件
+			geo:[{
+				name:'世界地图',
+				type:'map',
+				map:'world',
+				//关闭缩放和拖动
+				roam:'scale',
+				//设置为单选
+				selectMode:'single',
+				//图像上的文本标签
+				label:{
+					normal:{	//普通状态下
+						show:false	//不显示文本标签
+					},
+					emphasis:{	//高亮状态下
+						label:{
+							show:true	//显示文本标签
+						}
+					}
+				},
+				//定义样式
+				itemStyle:{
+					//普通状态下的样式
+					normal:{
+						areaColor:'#323c48',	//面积颜色
+						borderColor:'#111'		//边框颜色
+					},
+					//高亮状态下的样式
+					empgasis:{
+						areaColor:'#2a333d'		//面积颜色
+					}
+				}
+			}],
+			//设置图表背景色
+			backgroundColor:'#404a59',
+			
+			series:[{
+				name:'站点',
+				type:'scatter',
+				symbolSize : '3',	
+				coordinateSystem:'geo',
+				data:stationData
+			}]
+		});
+	});
+	
+});
+/*======================================================================鼠标点击站点或地图===========================================================================*/	
+ 	//添加点击事件
+	myEcharts.on('click',function(params){
+		//先将参数输出
+		//alert(params.name);
+		//对得到的参数进行切分
+		var str = params.name.split("-");
+		//判断如果str的长度大于等于2，表示点击的是站点
+		if(str.length >= 2){
+			alert("即将显示站点数据");
+			//需要将站点编号传递给show1.html
+			window.location.href="show1.html?station="+params.name;
+		}else {
+			//否咋点击就是地图
+			alert("即将显示区域数据");
+			window.location.href="show2.html?country="+params.name;
+		}
+	});
+	
+/*=================================================================================================================================================*/	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 
+	
+
+
+</script>
+</body>
+</html>

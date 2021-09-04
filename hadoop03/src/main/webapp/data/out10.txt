@@ -1,0 +1,201 @@
+AC===ANTIGUA AND BARBUDA======Antigua and Barb.
+AF===AFGHANISTAN======Afghanistan
+AG===ALGERIA======Algeria
+AJ===AZERBAIJAN======Azerbaijan
+AL===ALBANIA======Albania
+AM===ARMENIA======Armenia
+AN===ANDORRA======Andorra
+AO===ANGOLA======Angola
+AQ===AMERICAN SAMOA======American Samoa
+AR===ARGENTINA======Argentina
+AS===AUSTRALIA======Australia
+AU===AUSTRIA======Austria
+BA===BAHRAIN======Bahrain
+BB===BARBADOS======Barbados
+BC===BOTSWANA======Botswana
+BD===BERMUDA======Bermuda
+BE===BELGIUM======Belgium
+BF===BAHAMAS THE======Bahamas
+BG===BANGLADESH======Bangladesh
+BH===BELIZE======Belize
+BK===BOSNIA AND HERZEGOVINA======Bosnia and Herz.
+BL===BOLIVIA======Bolivia
+BN===BENIN======Benin
+BO===BELARUS======Belarus
+BP===SOLOMON ISLANDS======Solomon Is.
+BR===BRAZIL======Brazil
+BS===BASSAS DA INDIA======India
+BT===BHUTAN======Bhutan
+BU===BULGARIA======Bulgaria
+BX===BRUNEI======Brunei
+BY===BURUNDI======Burundi
+BZ===BELGIUM AND LUXEMBOURG======Luxembourg
+CA===CANADA======Canada
+CB===CAMBODIA======Cambodia
+CD===CHAD======Chad
+CE===SRI LANKA======Sri Lanka
+CF===CONGO======Dem. Rep. Congo
+CH===CHINA======China
+CI===CHILE======Chile
+CJ===CAYMAN ISLANDS======Cayman Is.
+CM===CAMEROON======Cameroon
+CN===COMOROS======Comoros
+CO===COLOMBIA======Colombia
+CQ===NORTHERN MARIANA ISLANDS======N. Mariana Is.
+CS===COSTA RICA======Costa Rica
+CT===CENTRAL AFRICAN REPUBLIC======Central African Rep.
+CU===CUBA======Cuba
+CV===CAPE VERDE======Cape Verde
+CY===CYPRUS======N. Cyprus
+DA===DENMARK======Denmark
+DJ===DJIBOUTI======Djibouti
+DO===DOMINICA======Dominica
+DR===DOMINICAN REPUBLIC======Dominican Rep.
+DY===DEMOCRATIC YEMEN======Yemen
+EC===ECUADOR======Ecuador
+EG===EGYPT======Egypt
+EI===IRELAND======Ireland
+EK===EQUATORIAL GUINEA======Guinea
+EN===ESTONIA======Estonia
+ER===ERITREA======Eritrea
+ES===EL SALVADOR======El Salvador
+ET===ETHIOPIA======Ethiopia
+EZ===CZECH REPUBLIC======Czech Rep.
+FI===FINLAND======Finland
+FJ===FIJI======Fiji
+FK===FALKLAND ISLANDS (ISLAS MALVINAS)======Falkland Is.
+FM===MICRONESIA, FEDERATED STATES OF======Micronesia
+FR===FRANCE======France
+GA===GAMBIA  THE======Gambia
+GB===GABON======Gabon
+GG===GEORGIA======Georgia
+GH===GHANA======Ghana
+GJ===GRENADA======Grenada
+GL===GREENLAND======Greenland
+GM===GERMANY======Germany
+GQ===GUAM======Guam
+GR===GREECE======Greece
+GT===GUATEMALA======Guatemala
+GV===GUINEA======Guinea-Bissau
+GY===GUYANA======Guyana
+HA===HAITI======Haiti
+HO===HONDURAS======Honduras
+HR===CROATIA======Croatia
+HU===HUNGARY======Hungary
+IC===ICELAND======Iceland
+ID===INDONESIA======Indonesia
+IN===INDIA======Br. Indian Ocean Ter.
+IR===IRAN======Iran
+IS===ISRAEL======Israel
+IT===ITALY======Italy
+IW===ISRAEL-JORDAN DMZ======Jordan
+IZ===IRAQ======Iraq
+JA===JAPAN======Japan
+JE===JERSEY======Jersey
+JM===JAMAICA======Jamaica
+KE===KENYA======Kenya
+KG===KYRGYZSTAN======Kyrgyzstan
+KN===KOREA, NORTH======Korea
+KR===KIRIBATI======Kiribati
+KU===KUWAIT======Kuwait
+KZ===KAZAKHSTAN======Kazakhstan
+LE===LEBANON======Lebanon
+LG===LATVIA======Latvia
+LH===LITHUANIA======Lithuania
+LI===LIBERIA======Liberia
+LO===SLOVAKIA======Slovakia
+LS===LIECHTENSTEIN======Liechtenstein
+LT===LESOTHO======Lesotho
+LY===LIBYA======Libya
+MA===MADAGASCAR======Madagascar
+MD===MOLDOVA======Moldova
+MG===MONGOLIA======Mongolia
+MH===MONTSERRAT======Montserrat
+MI===MALAWI======Malawi
+MK===MACEDONIA======Macedonia
+ML===MALI======Somalia
+MM===BURMA (MYANMAR)======Myanmar
+MO===MOROCCO======Morocco
+MP===MAURITIUS======Mauritius
+MR===MAURITANIA======Mauritania
+MT===MALTA======Malta
+MU===OMAN======Oman
+MW===MONTENEGRO======Montenegro
+MX===MEXICO======Mexico
+MY===MALAYSIA======Malaysia
+MZ===MOZAMBIQUE======Mozambique
+NC===NEW CALEDONIA======New Caledonia
+NE===NIUE======Niue
+NG===NIGER======Niger
+NH===VANUATU======Vanuatu
+NI===NIGERIA======Nigeria
+NL===NETHERLANDS======Netherlands
+NO===NORWAY======Norway
+NP===NEPAL======Nepal
+NS===SURINAME======Suriname
+NU===NICARAGUA======Nicaragua
+NZ===NEW ZEALAND======Aland
+PA===PARAGUAY======Paraguay
+PE===PERU======Peru
+PK===PAKISTAN======Pakistan
+PL===POLAND======Poland
+PM===PANAMA======Panama
+PO===PORTUGAL======Portugal
+PP===PAPUA NEW GUINEA======Papua New Guinea
+PS===PALAU - TRUST TERRITORY OF THE PACIFIC ISLANDS======Palau
+QA===QATAR======Qatar
+RO===ROMANIA======Romania
+RP===PHILIPPINES======Philippines
+RQ===PUERTO RICO======Puerto Rico
+RS===RUSSIA======Russia
+RW===RWANDA======Rwanda
+SA===SAUDI ARABIA======Saudi Arabia
+SB===ST. PIERRE AND MIQUELON======St. Pierre and Miquelon
+SE===SEYCHELLES======Seychelles
+SF===SOUTH AFRICA======South Africa
+SG===SENEGAL======Senegal
+SI===SLOVENIA======Slovenia
+SL===SIERRA LEONE======Sierra Leone
+SN===SINGAPORE======Singapore
+SO===SOMALIA======Mali
+SP===SPAIN======Spain
+SR===SERBIA======Serbia
+SU===SUDAN======Sudan
+SW===SWEDEN======Sweden
+SY===SYRIA======Syria
+SZ===SWITZERLAND======Switzerland
+TC===UNITED ARAB EMIRATES======United Arab Emirates
+TD===TRINIDAD AND TOBAGO======Trinidad and Tobago
+TH===THAILAND======Thailand
+TI===TAJIKISTAN======Tajikistan
+TK===TURKS AND CAICOS ISLANDS======Turks and Caicos Is.
+TN===TONGA======Tonga
+TO===TOGO======Togo
+TS===TUNISIA======Tunisia
+TU===TURKEY======Turkey
+TX===TURKMENISTAN======Turkmenistan
+TZ===TANZANIA======Tanzania
+UG===UGANDA======Uganda
+UK===UNITED KINGDOM======United Kingdom
+UP===UKRAINE======Ukraine
+US===UNITED STATES======United States
+UV===BURKINA FASO======Burkina Faso
+UY===URUGUAY======Uruguay
+UZ===UZBEKISTAN======Uzbekistan
+VE===VENEZUELA======Venezuela
+VM===VIETNAM======Vietnam
+WA===NAMIBIA======Namibia
+WS===WESTERN SAMOA======Samoa
+WZ===SWAZILAND======Swaziland
+ZA===ZAMBIA======Zambia
+ZI===ZIMBABWE======Zimbabwe
+FP===FRENCH POLYNESIA======Fr. Polynesia
+FS===FRENCH SOUTHERN AND ANTARCTIC LANDS======Fr. S. Antarctic Lands
+HM===HEARD ISLAND AND MCDONALD ISLANDS======Heard I. and McDonald Is.
+IM===MAN  ISLE OF======Isle of Man
+IV===COTE D'IVOIRE======Côte d'Ivoire
+LC===ST. LUCIA AND ST. VINCENT======Saint Lucia
+SH===ST. HELENA======Saint Helena
+ST===ST. LUCIA======Saint Lucia
+TP===SAO TOME AND PRINCIPE======São Tomé and Principe
+WI===WESTERN SAHARA======W. Sahara

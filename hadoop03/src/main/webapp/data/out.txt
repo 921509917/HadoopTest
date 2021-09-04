@@ -1,0 +1,239 @@
+ANTIGUA AND BARBUDA===Antigua and Barb.
+AFGHANISTAN===Afghanistan
+ALGERIA===Algeria
+AZERBAIJAN===Azerbaijan
+ALBANIA===Albania
+ARMENIA===Armenia
+ANDORRA===Andorra
+ANGOLA===Angola
+AMERICAN SAMOA===American Samoa
+AMERICAN SAMOA===Samoa
+ARGENTINA===Argentina
+AUSTRALIA===Australia
+AUSTRIA===Austria
+BAHRAIN===Bahrain
+BARBADOS===Barbados
+BOTSWANA===Botswana
+BERMUDA===Bermuda
+BELGIUM===Belgium
+BAHAMAS THE===Bahamas
+BANGLADESH===Bangladesh
+BELIZE===Belize
+BOSNIA AND HERZEGOVINA===Bosnia and Herz.
+BOLIVIA===Bolivia
+BENIN===Benin
+BELARUS===Belarus
+SOLOMON ISLANDS===Solomon Is.
+BRAZIL===Brazil
+BASSAS DA INDIA===India
+BHUTAN===Bhutan
+BULGARIA===Bulgaria
+BRUNEI===Brunei
+BURUNDI===Burundi
+BELGIUM AND LUXEMBOURG===Belgium
+BELGIUM AND LUXEMBOURG===Luxembourg
+CANADA===Canada
+CAMBODIA===Cambodia
+CHAD===Chad
+SRI LANKA===Sri Lanka
+CONGO===Dem. Rep. Congo
+CONGO===Congo
+CHINA===China
+CHILE===Chile
+CAYMAN ISLANDS===Cayman Is.
+CAMEROON===Cameroon
+COMOROS===Comoros
+COLOMBIA===Colombia
+NORTHERN MARIANA ISLANDS===N. Mariana Is.
+COSTA RICA===Costa Rica
+CENTRAL AFRICAN REPUBLIC===Central African Rep.
+CUBA===Cuba
+CAPE VERDE===Cape Verde
+CYPRUS===N. Cyprus
+CYPRUS===Cyprus
+DENMARK===Denmark
+DJIBOUTI===Djibouti
+DOMINICA===Dominica
+DOMINICAN REPUBLIC===Dominican Rep.
+DEMOCRATIC YEMEN===Yemen
+ECUADOR===Ecuador
+EGYPT===Egypt
+IRELAND===Ireland
+EQUATORIAL GUINEA===Guinea
+EQUATORIAL GUINEA===Eq. Guinea
+EQUATORIAL GUINEA===Papua New Guinea
+ESTONIA===Estonia
+ERITREA===Eritrea
+EL SALVADOR===El Salvador
+ETHIOPIA===Ethiopia
+CZECH REPUBLIC===Czech Rep.
+FINLAND===Finland
+FIJI===Fiji
+FALKLAND ISLANDS (ISLAS MALVINAS)===Falkland Is.
+MICRONESIA, FEDERATED STATES OF===Isle of Man
+MICRONESIA, FEDERATED STATES OF===United States
+FRENCH POLYNESIA===Fr. Polynesia
+FRANCE===France
+FRENCH SOUTHERN AND ANTARCTIC LANDS===Fr. S. Antarctic Lands
+GAMBIA  THE===Gambia
+GABON===Gabon
+GEORGIA===Georgia
+GHANA===Ghana
+GRENADA===Grenada
+GREENLAND===Greenland
+GERMANY===Germany
+GUAM===Guam
+GREECE===Greece
+GUATEMALA===Guatemala
+GUINEA===Guinea
+GUINEA===Eq. Guinea
+GUINEA===Papua New Guinea
+GUYANA===Guyana
+HAITI===Haiti
+HEARD ISLAND AND MCDONALD ISLANDS===Heard I. and McDonald Is.
+HONDURAS===Honduras
+CROATIA===Croatia
+HUNGARY===Hungary
+ICELAND===Iceland
+INDONESIA===Indonesia
+MAN  ISLE OF===Isle of Man
+INDIA===India
+BRITISH INDIAN OCEAN TERRITORY===Br. Indian Ocean Ter.
+IRAN===Iran
+ISRAEL===Israel
+ITALY===Italy
+COTE D'IVOIRE===Côte d'Ivoire
+IRAQ===Iraq
+JAPAN===Japan
+JERSEY===Jersey
+JAMAICA===Jamaica
+JORDAN===Jordan
+KENYA===Kenya
+KYRGYZSTAN===Kyrgyzstan
+KIRIBATI===Kiribati
+KOREA, SOUTH===South Africa
+KUWAIT===Kuwait
+KAZAKHSTAN===Kazakhstan
+ST. LUCIA AND ST. VINCENT===Saint Lucia
+LEBANON===Lebanon
+LATVIA===Latvia
+LITHUANIA===Lithuania
+LIBERIA===Liberia
+SLOVAKIA===Slovakia
+LIECHTENSTEIN===Liechtenstein
+LESOTHO===Lesotho
+LUXEMBOURG===Luxembourg
+LIBYA===Libya
+MADAGASCAR===Madagascar
+MOLDOVA===Moldova
+MONGOLIA===Mongolia
+MONTSERRAT===Montserrat
+MALAWI===Malawi
+MACEDONIA===Macedonia
+MALI===Mali
+MOROCCO===Morocco
+MAURITIUS===Mauritius
+MAURITANIA===Mauritania
+MALTA===Malta
+OMAN===Oman
+MONTENEGRO===Montenegro
+MEXICO===Mexico
+MALAYSIA===Malaysia
+MOZAMBIQUE===Mozambique
+NEW CALEDONIA===New Caledonia
+NEW CALEDONIA===New Zealand
+NEW CALEDONIA===Papua New Guinea
+NIUE===Niue
+NIGER===Niger
+VANUATU===Vanuatu
+NIGERIA===Nigeria
+NETHERLANDS===Netherlands
+NORWAY===Norway
+NEPAL===Nepal
+SURINAME===Suriname
+NETHERLANDS ANTILLES===Netherlands
+NICARAGUA===Nicaragua
+NEW ZEALAND===New Caledonia
+NEW ZEALAND===New Zealand
+NEW ZEALAND===Papua New Guinea
+OCEAN WEATHER STATIONS===Br. Indian Ocean Ter.
+PARAGUAY===Paraguay
+PERU===Peru
+PAKISTAN===Pakistan
+POLAND===Poland
+PANAMA===Panama
+PORTUGAL===Portugal
+PAPUA NEW GUINEA===Guinea
+PAPUA NEW GUINEA===Eq. Guinea
+PAPUA NEW GUINEA===New Caledonia
+PAPUA NEW GUINEA===New Zealand
+PAPUA NEW GUINEA===Papua New Guinea
+PALAU - TRUST TERRITORY OF THE PACIFIC ISLANDS===Isle of Man
+PALAU - TRUST TERRITORY OF THE PACIFIC ISLANDS===Palau
+GUINEA-BISSAU===Guinea-Bissau
+SOUTH PACIFIC ISLANDS===South Africa
+QATAR===Qatar
+ROMANIA===Romania
+PHILIPPINES===Philippines
+PUERTO RICO===Puerto Rico
+RUSSIA===Russia
+RWANDA===Rwanda
+SAUDI ARABIA===Saudi Arabia
+ST. PIERRE AND MIQUELON===St. Pierre and Miquelon
+SEYCHELLES===Seychelles
+SOUTH AFRICA===South Africa
+SENEGAL===Senegal
+ST. HELENA===Saint Helena
+SLOVENIA===Slovenia
+SIERRA LEONE===Sierra Leone
+SINGAPORE===Singapore
+SOMALIA===Somalia
+SPAIN===Spain
+SERBIA===Serbia
+ST. LUCIA===Saint Lucia
+SUDAN===Sudan
+SUDAN===S. Sudan
+SWEDEN===Sweden
+SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS===Georgia
+SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS===South Africa
+SYRIA===Syria
+SWITZERLAND===Switzerland
+UNITED ARAB EMIRATES===United Arab Emirates
+UNITED ARAB EMIRATES===United Kingdom
+UNITED ARAB EMIRATES===United States
+TRINIDAD AND TOBAGO===Trinidad and Tobago
+THAILAND===Thailand
+TAJIKISTAN===Tajikistan
+TURKS AND CAICOS ISLANDS===Turks and Caicos Is.
+TONGA===Tonga
+TOGO===Togo
+SAO TOME AND PRINCIPE===São Tomé and Principe
+TUNISIA===Tunisia
+TURKEY===Turkey
+TURKMENISTAN===Turkmenistan
+TANZANIA===Tanzania
+UGANDA===Uganda
+UNITED KINGDOM===United Arab Emirates
+UNITED KINGDOM===United Kingdom
+UNITED KINGDOM===United States
+UKRAINE===Ukraine
+UNITED STATES===United Arab Emirates
+UNITED STATES===United Kingdom
+UNITED STATES===United States
+BURKINA FASO===Burkina Faso
+URUGUAY===Uruguay
+UZBEKISTAN===Uzbekistan
+VENEZUELA===Venezuela
+VIRGIN ISLANDS (BRITISH)===U.S. Virgin Is.
+VIETNAM===Vietnam
+VIRGIN ISLANDS (U.S.)===U.S. Virgin Is.
+NAMIBIA===Namibia
+WESTERN SAHARA===W. Sahara
+WESTERN SAMOA===American Samoa
+WESTERN SAMOA===Samoa
+SWAZILAND===Swaziland
+YEMEN===Yemen
+ZAMBIA===Zambia
+ZIMBABWE===Zimbabwe
+SAMOA===American Samoa
+SAMOA===Samoa

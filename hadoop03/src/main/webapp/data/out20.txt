@@ -1,0 +1,15 @@
+
+
+
+
+
+KS===KOREA, SOUTH======South Africa
+
+PP===PAPUA NEW GUINEA======Eq. Guinea
+PP===PAPUA NEW GUINEA======New Zealand
+PZ===SOUTH PACIFIC ISLANDS======South Africa
+
+
+VI===VIRGIN ISLANDS (BRITISH)======U.S. Virgin Is.
+VQ===VIRGIN ISLANDS (U.S.)======U.S. Virgin Is.
+

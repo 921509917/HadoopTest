@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>GSOD DATA DISPLAY</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="skin-blue sidebar-mini">
+<div class="wrapper">
+	<header class="main-header">
+
+    <a href="#" class="logo">
+      <span class="logo-lg"><b>GSOD</b></span>
+    </a>
+
+    <nav class="navbar navbar-static-top" role="navigation">
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button"></a>
+      
+      
+       <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            	<img src="dist/img/area.gif" class="user-image" alt="User Image">
+              <span class="hidden-xs"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">區域氣象數據分析</font></font></span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="dist/img/area.gif" class="img-circle" alt="User Image">
+                <p id="station_info">
+                </p>
+              </li>
+              <!-- Menu Footer-->
+            </ul>
+          </li>
+        </ul>
+      </div>
+      
+      
+      
+    </nav>
+  </header>
+  
+  <aside class="main-sidebar">
+
+    <section class="sidebar">
+      <!-- search form (Optional) -->
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+              </button>
+            </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu tree" data-widget="tree">
+        <li class="header">HEADER</li>
+        <!-- Optionally, you can add icons to the links -->
+        <li><a href="station.html"><i class="fa fa-link"></i> <span>全球站点地图显示</span></a></li>
+        <li><a href="show1.html"><i class="fa fa-link"></i> <span>站点气象数据展示</span></a></li>
+        <li class="active"><a href="show2.html"><i class="fa fa-link"></i> <span>区域气象数据展示</span></a></li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+  
+  
+  
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" >
+    <!-- Main content -->
+    <section class="content">
+    <!-- 国家温度类数据显示 -->
+		<div class="row">
+			<div class="col-md-2"></div>        	
+			<div class="col-md-8" >
+				<div class="box box-primary" id="country_temp_display" style="height: 350px; width: 100%;"></div>
+			</div>        	
+			<div class="col-md-2"></div>        	
+		</div>
+		
+		
+		<div class="row">
+        	<div class="col-md-4">
+        	<div class="box">
+				<p class="text-center">
+					<strong>偏冷区域站点列表</strong>
+				</p>
+				<table id="datatb1" class="table table-bordered table-striped dataTable" style="width:100%">
+					<thead>
+						<tr>
+		                	<th style="width:65%">站点名称(STN-WBAN)</th>
+		                	<th style="width:35%">国家/区域名称</th>
+			            </tr>
+			        </thead>
+			    </table>
+        	</div>
+            </div>
+            
+            
+        	<div class="col-md-4">
+        	<div class="box">
+				<p class="text-center">
+					<strong>宜居区域站点列表</strong>
+				</p>
+				<table id="datatb0" class="table table-bordered table-striped dataTable" style="width:100%">
+					<thead>
+						<tr>
+		                	<th style="width:65%">站点名称(STN-WBAN)</th>
+		                	<th style="width:35%">国家/区域名称</th>
+			            </tr>
+			        </thead>
+			    </table>
+        	</div>
+            </div>
+            
+            
+        	<div class="col-md-4">
+        	<div class="box">
+				<p class="text-center">
+					<strong>偏热区域站点列表</strong>
+				</p>
+				<table id="datatb2" class="table table-bordered table-striped dataTable" style="width:100%">
+					<thead>
+						<tr>
+		                	<th style="width:65%">站点名称(STN-WBAN)</th>
+		                	<th style="width:35%">国家/区域名称</th>
+			            </tr>
+			        </thead>
+			    </table>
+        	</div>
+            </div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-6" >
+				<div class="box box-primary" id="station_temp1_display" style="height: 350px; width: 100%;"></div>
+			</div>        	
+			<div class="col-md-6">
+				<div class="box box-primary" id="station_temp2_display" style="height: 350px; width: 100%;"></div>
+			</div>  
+		</div>
+		
+    </section>
+  </div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<script type="text/javascript" src="./js/echarts.js"></script>
+<script src="dist/js/adminlte.min.js"></script>
+<script type="text/javascript" src="./js/echarts.js"></script>
+<script type="text/javascript">
+	/* 获取首页传递得到的参数（区域或者国家的名称） */
+	var params = (window.location.search).split("?")[1];
+	var myCharts = echarts.init(document.getElementById('country_temp_display'));
+	var station1 = echarts.init(document.getElementById('station_temp1_display'));
+	var station2 = echarts.init(document.getElementById('station_temp2_display'));
+	// 站点的编号
+	var stationNum = "";
+	/* ****************************** 显示国家温度类数据 ********************************************* */
+	
+	var countryURL = "CountryWeatherServlet?" + params;
+	$.get(countryURL, function(data){
+		
+		data = JSON.parse(data);
+		// 获取countryWeather数据，并用作图表展示
+		showChart(data.countryWeather);
+		
+		// 获取偏冷、宜居、偏热数据,并存储到数组中
+		var tabData = [data.livable, data.cold, data.hot];
+		
+		
+		initTable(tabData);
+		
+	});
+	
+	/* ***************** 区域温度类数据图表展示 ********************** */
+	function showChart(data){
+		data = JSON.parse(data);
+		myCharts.setOption(option = {
+				title: {
+			        text: '区域温度类数据展示',
+			        left: 'center'
+			    },
+			    tooltip: {
+			        trigger: 'axis',
+			        axisPointer: {
+			            type: 'shadow'
+			        }
+			    },
+			    dataZoom: [
+			    	{
+			    		type: 'inside'
+			    	}
+			    ],
+			    xAxis: {
+			    	data: data.map(function(item){
+			        	return item.date;
+			        })
+			    },
+			    yAxis: 
+			        {
+			            type: 'value'
+			        }
+			    ,
+			    series: [{
+			        name: '平均温度',
+			        type: 'line',
+			        data: data.map(function(item){
+			        	return item.avg;
+			        })
+			    }, {
+			        name: '最高温度',
+			        type: 'line',
+		            data: data.map(function(item){
+			        	return item.max;
+			        })
+		        },{
+			        name: '最低温度',
+			        type: 'line',
+		            data: data.map(function(item){
+			        	return item.min;
+			        })
+		        },{
+			        name: '温度极差',
+			        type: 'bar',
+		            data: data.map(function(item){
+			        	return item.range;
+			        })
+		        }
+			    ]
+		});
+	}
+	
+	/* ************************** 表格展示 *************************************** */
+	function initTable(data){
+		$.each(data, function(index, valueSet){
+			valueSet = JSON.parse(valueSet);
+			var table = $('#datatb'+index).DataTable({
+				data: valueSet,
+			   	 "columns": [
+			        { "data": "name" },
+			        { "data": "countryCode" },
+			    ],
+		        'lengthChange': false,
+		        'searching'   : false,
+		        'ordering'    : true,
+		        'info'        : false,
+		        'autoWidth'   : true,
+		        "scrollY":    "220px",
+		        "paging": false
+			});
+			
+			
+			
+			$('#datatb'+index+' tbody').on('click', 'tr', function(){
+				// 点击站点行之后，将所有行的背景色移除
+		        $('tr').css({"background-color":"transparent"});
+		    	// 选中的一行，即一个tr, $(this)就是这个tr
+			    if ( $(this).hasClass('selected') ) {
+		            $(this).removeClass('selected');
+		            // 设置stn+wban编号为空
+		            stationNum = "";
+		        }else {
+		            $('tr.selected').removeClass('selected');
+		            $(this).addClass('selected');
+		            // 获取stn+wban编号
+		    		stationNum = $(this).children("td").eq(0).text();
+		            
+		            /* +++++++++++++++ 显示具体站点的温度类数据 +++++++++++++++++++ */
+		            var stationURL = "StationTempServlet?stationNum="+stationNum;
+		            $.get(stationURL, function(data){
+		            	data = JSON.parse(data);
+		            	
+		            	var tempData = data.temp;
+		            	var countData = data.count;
+		            	
+		            	showStationChart1(tempData); 
+		            	
+		            	showStationChart2(countData);
+		            });
+		            
+		        }
+		    	// 为选中的行添加背景色
+	            $('tr.selected').css({"background-color":"red"});
+		    	
+			});
+		});
+	}
+	
+	/* ************************* 站点温度类数据展示 - 折线图 ***************************** */
+		function showStationChart1(data){
+		data = JSON.parse(data);
+		station1.setOption(option = {
+				title: {
+			        text: '站点温度数据展示',
+			        left: 'center'
+			    },
+			    tooltip: {
+			        trigger: 'axis',
+			        axisPointer: {
+			            type: 'shadow'
+			        }
+			    },
+			    dataZoom: [
+			    	{
+			    		type: 'inside'
+			    	}
+			    ],
+			    xAxis: {
+			    	data: data.map(function(item){
+			        	return item.date;
+			        })
+			    },
+			    yAxis: 
+			        {
+			            type: 'value'
+			        }
+			    ,
+			    series: [{
+			        name: '平均温度',
+			        type: 'line',
+			        data: data.map(function(item){
+			        	return item.avg;
+			        })
+			    }, {
+			        name: '最高温度',
+			        type: 'line',
+		            data: data.map(function(item){
+			        	return item.max;
+			        })
+		        },{
+			        name: '最低温度',
+			        type: 'line',
+		            data: data.map(function(item){
+			        	return item.min;
+			        })
+		        },{
+			        name: '温度极差',
+			        type: 'bar',
+		            data: data.map(function(item){
+			        	return item.range;
+			        })
+		        }
+			    ]
+		});
+	}
+	
+	function showStationChart2(data){
+		data = JSON.parse(data);
+		station2.setOption(option = {
+				title: {
+			        text: '偏冷、宜居、偏热数据占比',
+			        left: 'center'
+			    },
+			    tooltip : {
+			        trigger: 'item',
+			        formatter: "{a} <br/>{b} : {c} ({d}%)"
+			    },
+			    series: [{
+			    	name: '偏冷、宜居、偏热数据占比',
+		            type: 'pie',
+		            data: [
+		            	{value:data.map(function(item){
+				        	return item.cold;
+				        }), name:'偏冷'},
+		                {value:data.map(function(item){
+				        	return item.hot;
+				        }), name:'偏热'},
+		                {value:data.map(function(item){
+				        	return item.livable;
+				        }), name:'宜居'},
+		            ]
+			    }
+			    ]
+		});
+	}
+	
+	/* ************************* 站点温度类数据展示 - 饼图 ***************************** */
+	
+	//获取国家站点的后台URL
+	//var tabUrl = "CountryTableServlet?"+params;
+	/******************************************************* 初始化站点数据表格 *******************************************************************************/
+	/* $.get(tabUrl, function(tabData){
+		tabData = JSON.parse(tabData);
+			var table = $('#datatb').dataTable({
+				data : tabData,
+				columns: [
+		        { data: 'name' },
+		        { data: 'value'}
+		    ],
+		        'lengthChange': false,		// 长度固定
+		        'searching'   : false,		// 禁止搜索
+		        'ordering'    : true,		// 开启排序
+		        'info'        : false,		// 
+		        'autoWidth'   : true,		// 自动宽度
+		        "scrollY":    "400px",		// 设定高度
+		        "paging": false				// 禁止分页
+			});
+			
+			
+		// 给表格添加点击事件 
+		$('#datatb tbody').on('click', 'tr', function(){
+			// 点击站点行之后，将所有行的背景色移除
+	        $('tr').css({"background-color":"transparent"});
+	    	// 选中的一行，即一个tr, $(this)就是这个tr
+		    if ( $(this).hasClass('selected') ) {
+	            $(this).removeClass('selected');
+	            // 设置stn+wban编号为空
+	            stationNum = "";
+	        }else {
+	            $('tr.selected').removeClass('selected');
+	            $(this).addClass('selected');
+	            // 获取stn+wban编号
+	    		stationNum = $(this).children("td").eq(0).text();
+	        }
+	    	// 为选中的行添加背景色
+            $('tr.selected').css({"background-color":"red"});
+	    	
+		});
+	}) */
+	
+	/* ****************************************************** 数据分析及图表展示 ****************************************************************************** */
+	
+/* *************************************调用你后台进行数据分析************************************************* */
+	
+	
+	
+</script>
+</body>
+</html>
